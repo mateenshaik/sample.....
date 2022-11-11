@@ -4,33 +4,25 @@ pipeline {
     stages{
        stage('hello')
            steps{ 
-               sh 'echo hello1'
+               echo hello1
   }
 }
    
-       stage('sleep') {
+       stage('hello2') {
            steps{ 
-               sh 'sleep 60'
-  }
-}
-     
-       stage('hello2'){
-           steps{ 
-               sh 'echo hello2'
-  }
-}
-    stage('sleep') {
-           steps{ 
-               sh 'sleep 60'
-
+               echo hello2
   }
 }
      
        stage('hello3'){
            steps{ 
-               sh 'echo hello3'
-
+               echo hello3
   }
+}
+    stage('hello4') {
+           steps{ 
+               echo hello4
+}
 }
 }
 }
