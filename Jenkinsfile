@@ -16,7 +16,7 @@ pipeline {
      
        stage('hello3') {
            steps { 
-               sh 'top'
+               sh 'du'
   }
 }
     stage('hello4') {
