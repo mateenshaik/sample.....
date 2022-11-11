@@ -4,24 +4,24 @@ pipeline {
     stages {
         stage('hello') {
            steps { 
-               echo 'hello welcome to siemens'
+               sh 'pwd'
   }
 }
    
       stage('hello2') {
            steps { 
-               echo 'hello2'
+               sh 'ls'
   }
 }
      
        stage('hello3') {
            steps { 
-               echo 'hello3'
+               sh 'top'
   }
 }
     stage('hello4') {
            steps { 
-               echo 'hello4'
+               sh 'pwd'
 }
 }
 }
